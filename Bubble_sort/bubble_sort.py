@@ -2,8 +2,7 @@
 
 
 
-from itertools import count
-
+import numpy as np
 
 alist = []
 def bubble_sort(alist):
@@ -19,7 +18,7 @@ def bubble_sort(alist):
             return
 
 if __name__ == "__main__":
-    li = [54,26,93,19,88,42,53,20]
+    li = np.random.randint(100, size = 10)
     print(li)
     bubble_sort(li)
     print(li)
